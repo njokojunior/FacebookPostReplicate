@@ -1,0 +1,56 @@
+*,html{
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: inherit;
+}
+
+.nav, .main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    align-items: center;
+}
+.main{
+    height: 95vh;
+}
+
+.left-1, .left{
+    display: flex;
+    border: 1px solid red;
+}
+
+.left-2{
+    flex-direction: column;
+    width: 25%;
+}
+
+.left-2--block{
+    border: 1px solid red;
+}
+
+.center--2{
+    height: 100%;
+    width: 50%;
+    border: 1px solid red;
+    
+}
+
+.stories{
+    display: flex;
+    width: 100%;
+    
+}
+
+.right--2{
+    
+    border: 1px solid red;
+    width: 25%;
+}
+
+.u-margin-top-medium{
+    padding-top: 20px;
+}

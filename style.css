@@ -4,6 +4,10 @@
 
 body{
     box-sizing: inherit;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 200;
 }
 
 .nav, .main{
@@ -18,18 +22,69 @@ body{
     height: 95vh;
 }
 
-.left-1, .left{
+.left-1, .left-2{
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    padding-left: 20px;
 }
+
+.left-1{
+    align-items: center;
+    gap: 20px;
+
+    .left-1__search{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.search__placeholder,.search__icon{
+    height: 40px;
+    width: 250px;
+    background-color: rgb(139, 139, 139, .5);
+}
+
+.search__placeholder, .search__placeholder::before{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    
+}
+
+
+
+
+
+
+
+.search__icon{
+   width: 30px;
+   padding: 12px 0 0 20px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   color: rgb(93,93,93);
+    
+}
+
+.fb-logo{
+    color: rgb(8,99,247);
+    font-size:45px;
+    
+}
+
 
 .left-2{
     flex-direction: column;
     width: 25%;
+    height:85vh;
+    justify-content: space-evenly;
+   
 }
 
 .left-2--block{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .center--2{
@@ -53,4 +108,11 @@ body{
 
 .u-margin-top-medium{
     padding-top: 20px;
+}
+
+.user-color{
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient( to right , blue,rgb(8, 230, 200));
+    -webkit-background-clip: text;
 }
